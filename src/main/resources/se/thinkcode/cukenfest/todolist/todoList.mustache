@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A Todo List</title>
+</head>
+<body>
+
+<h1>The Todo List</h1>
+
+<form method="post" action="/">
+    <label for="owner">Owner </label>
+    <div>
+        <input id="owner" name="owner"/>
+    </div>
+    <br>
+    <label for="task">Task </label>
+    <div>
+        <textarea name="task" id="task" rows="2" cols="30"></textarea>
+    </div>
+    <br>
+    <input id="submit" type="submit" name="submit" value="Submit"/>
+</form>
+
+<hr>
+
+<p>{{owner}}'s todo list:</p>
+
+<ul>
+    {{#tasks}}
+        <li id="taskElement">{{description}}</li>
+    {{/tasks}}
+</ul>
+
+</body>
+</html>

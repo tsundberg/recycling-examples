@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+plugins {
+    id 'java'
+    id "se.thinkcode.cucumber-runner" version "0.0.7"
+}
+
+project.ext {
+    cucumberVersion = '4.2.6'
+}
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.11.1'
+
+    testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+    testImplementation 'io.cucumber:cucumber-junit:' + cucumberVersion
+}
+
+cucumber {
+    glue = 'classpath:se.thinkcode.cukenfest'
+    threads = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+    plugin = ['progress']
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+repositories {
+    mavenCentral()
+}
