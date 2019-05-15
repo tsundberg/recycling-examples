@@ -1,4 +1,4 @@
-package se.thinkcode.cukenfest;
+package se.thinkcode;
 
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
