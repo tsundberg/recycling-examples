@@ -25,6 +25,6 @@ The example uses Gradle, build it with:
 
     ./gradlew cucumber
 
-This will build the system and verify that the core woeks as expected. 
+This will build the system and verify that the core works as expected. 
 That is, that the model works as expected.
 
