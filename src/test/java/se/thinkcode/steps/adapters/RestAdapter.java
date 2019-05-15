@@ -1,13 +1,13 @@
-package se.thinkcode.cukenfest.steps.adapters;
+package se.thinkcode.steps.adapters;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.glassfish.jersey.client.JerseyClientBuilder;
-import se.thinkcode.cukenfest.Main;
-import se.thinkcode.cukenfest.todolist.Database;
-import se.thinkcode.cukenfest.todolist.Owner;
-import se.thinkcode.cukenfest.todolist.Task;
-import se.thinkcode.cukenfest.todolist.TodoItem;
+import se.thinkcode.Main;
+import se.thinkcode.todolist.Database;
+import se.thinkcode.todolist.Owner;
+import se.thinkcode.todolist.Task;
+import se.thinkcode.todolist.TodoItem;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Entity;

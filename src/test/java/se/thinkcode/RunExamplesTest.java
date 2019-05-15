@@ -1,4 +1,4 @@
-package se.thinkcode.cukenfest;
+package se.thinkcode;
 
 // @RunWith(Cucumber.class)
 public class RunExamplesTest {

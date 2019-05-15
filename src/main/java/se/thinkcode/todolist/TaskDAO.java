@@ -1,4 +1,4 @@
-package se.thinkcode.cukenfest.todolist;
+package se.thinkcode.todolist;
 
 import org.jdbi.v3.sqlobject.config.RegisterRowMapper;
 import org.jdbi.v3.sqlobject.customizer.Bind;

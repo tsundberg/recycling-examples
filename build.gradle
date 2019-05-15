@@ -6,7 +6,7 @@ buildscript {
 
 plugins {
     id 'java'
-    id "se.thinkcode.cucumber-runner" version "0.0.7"
+    id "se.thinkcode.cucumber-runner" version "0.0.8"
 }
 
 project.ext {
@@ -40,7 +40,7 @@ dependencies {
 }
 
 cucumber {
-    glue = 'classpath:se.thinkcode.cukenfest'
+    glue = 'classpath:se.thinkcode'
     threads = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
     plugin = ['progress']
 }

@@ -1,11 +1,11 @@
-package se.thinkcode.cukenfest;
+package se.thinkcode;
 
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import io.dropwizard.views.ViewBundle;
-import se.thinkcode.cukenfest.todolist.*;
+import se.thinkcode.todolist.*;
 
 public class Main extends Application<Configuration> {
     private Database database;

@@ -1,4 +1,4 @@
-package se.thinkcode.cukenfest.todolist;
+package se.thinkcode.todolist;
 
 import io.dropwizard.views.View;
 

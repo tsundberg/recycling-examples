@@ -1,4 +1,4 @@
-package se.thinkcode.cukenfest.todolist;
+package se.thinkcode.todolist;
 
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;

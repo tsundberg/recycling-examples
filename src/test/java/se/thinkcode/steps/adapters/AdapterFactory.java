@@ -1,13 +1,13 @@
-package se.thinkcode.cukenfest.steps.adapters;
+package se.thinkcode.steps.adapters;
 
 import org.apache.commons.lang3.SystemUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import se.thinkcode.cukenfest.todolist.Database;
-import se.thinkcode.cukenfest.todolist.InMemoryDatabase;
-import se.thinkcode.cukenfest.todolist.SqlDatabase;
+import se.thinkcode.todolist.Database;
+import se.thinkcode.todolist.InMemoryDatabase;
+import se.thinkcode.todolist.SqlDatabase;
 
 import java.net.URL;
 

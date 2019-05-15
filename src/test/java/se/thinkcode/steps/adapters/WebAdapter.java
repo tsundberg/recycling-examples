@@ -1,12 +1,12 @@
-package se.thinkcode.cukenfest.steps.adapters;
+package se.thinkcode.steps.adapters;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import se.thinkcode.cukenfest.Main;
-import se.thinkcode.cukenfest.todolist.Database;
-import se.thinkcode.cukenfest.todolist.Owner;
-import se.thinkcode.cukenfest.todolist.Task;
+import se.thinkcode.Main;
+import se.thinkcode.todolist.Database;
+import se.thinkcode.todolist.Owner;
+import se.thinkcode.todolist.Task;
 
 import java.util.ArrayList;
 import java.util.List;
