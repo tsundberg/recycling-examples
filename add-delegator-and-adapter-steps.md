@@ -4,13 +4,13 @@
 ## Rewrite the steps to use a delegator
 
 ```
-package se.thinkcode.cukenfest.steps;
+package se.thinkcode.steps;
 
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import se.thinkcode.cukenfest.todolist.Task;
+import se.thinkcode.todolist.Task;
 
 import java.util.List;
 
@@ -43,12 +43,12 @@ public class TodoSteps {
 ## Implement the delegator
 
 ```
-package se.thinkcode.cukenfest.steps;
+package se.thinkcode.steps;
 
-import se.thinkcode.cukenfest.steps.adaptors.AdapterFactory;
-import se.thinkcode.cukenfest.steps.adaptors.TodoAdapter;
-import se.thinkcode.cukenfest.todolist.Owner;
-import se.thinkcode.cukenfest.todolist.Task;
+import se.thinkcode.steps.adaptors.AdapterFactory;
+import se.thinkcode.steps.adaptors.TodoAdapter;
+import se.thinkcode.todolist.Owner;
+import se.thinkcode.todolist.Task;
 
 import java.util.List;
 
@@ -80,10 +80,10 @@ class Delegator {
 ## Create the interface each adapter much implement 
 
 ```
-package se.thinkcode.cukenfest.steps.adapters;
+package se.thinkcode.steps.adapters;
 
-import se.thinkcode.cukenfest.todolist.Owner;
-import se.thinkcode.cukenfest.todolist.Task;
+import se.thinkcode.todolist.Owner;
+import se.thinkcode.todolist.Task;
 
 import java.util.List;
 
@@ -97,7 +97,7 @@ public interface TodoAdapter {
 ## The delegator uses an adapter factory for getting adaptors
 
 ```
-package se.thinkcode.cukenfest.steps.adapters;
+package se.thinkcode.steps.adapters;
 
 public class AdapterFactory {
     public TodoAdapter getAdapter() {
@@ -119,12 +119,12 @@ public class AdapterFactory {
 ## Implement the model adapter
 
 ```
-package se.thinkcode.cukenfest.steps.adapters;
+package se.thinkcode.steps.adapters;
 
-import se.thinkcode.cukenfest.todolist.Database;
-import se.thinkcode.cukenfest.todolist.Owner;
-import se.thinkcode.cukenfest.todolist.Task;
-import se.thinkcode.cukenfest.todolist.TodoList;
+import se.thinkcode.todolist.Database;
+import se.thinkcode.todolist.Owner;
+import se.thinkcode.todolist.Task;
+import se.thinkcode.todolist.TodoList;
 
 import java.util.List;
 
